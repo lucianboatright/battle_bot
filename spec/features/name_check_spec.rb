@@ -1,3 +1,4 @@
+require 'spec_helper'
 feature "names have been added to page" do
   scenario "check new page has names" do
     visit '/'
