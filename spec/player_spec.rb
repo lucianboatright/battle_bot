@@ -7,4 +7,5 @@ describe Player do
   it 'returns the player name' do
     expect(subject.name).to eq "Player_1"
   end
+  
 end
