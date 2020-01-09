@@ -10,7 +10,11 @@ class Player
     @hp = hp
   end
 
-  def attack
+  def attack(player)
+    player.damage
+  end
+
+  def damage
     @hp -= DAMAGE_HP
   end
 
