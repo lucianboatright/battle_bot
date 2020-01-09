@@ -7,7 +7,7 @@ class Battle < Sinatra::Base
     erb :index
   end
 
-  run! if app_file == $0
+
 
   post '/names' do
     session[:player_1] = params[:player_1]
@@ -21,4 +21,6 @@ class Battle < Sinatra::Base
     @player_2 = session[:player_2]
     erb :play
   end
+
+  run! if app_file == $0
 end
