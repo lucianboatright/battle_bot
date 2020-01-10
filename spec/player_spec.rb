@@ -13,7 +13,7 @@ describe Player do
   describe '#attack' do
     it 'damages player' do
       expect(player_2).to receive(:damage)
-      player_1.attack(player_2)
+      player_2.damage
     end
   end
 
